@@ -13,3 +13,6 @@ def post_text(text : str):
     return {"messages": "Done",
     "text" : text}
 
+@app.delete("/")
+def delete_text():
+    return {"messages": "Delete"}
