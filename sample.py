@@ -10,5 +10,6 @@ def get_text():
 
 @app.post("/{text}")
 def post_text(text : str):
-    pass
+    return {"messages": "Done",
+    "text" : text}
 
