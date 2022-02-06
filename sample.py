@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 def get_text():
-    pass
+    return {"messages": "Hello World!"}
 
 
 @app.post("/{text}")
